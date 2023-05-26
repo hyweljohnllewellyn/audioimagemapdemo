@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Audio Iimage Map Demo</title>
+		
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.4" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="/wp-content/themes/twentysixteen/style.css?ver=5.8.4" type="text/css" media="all">
+<link rel="stylesheet" id="child-style-css" href="/wp-content/themes/twentysixteen-child-victorian/style.css?ver=5.8.4" type="text/css" media="all">
+<link rel="stylesheet" id="twentysixteen-fonts-css" href="https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="genericons-css" href="/wp-content/themes/twentysixteen/genericons/genericons.css?ver=3.4.1" type="text/css" media="all">
+<link rel="stylesheet" id="twentysixteen-style-css" href="/wp-content/themes/twentysixteen-child-victorian/style.css?ver=5.8.4" type="text/css" media="all">
+<link rel="icon" href="/image/cropped-Victorian-Carolers-for-Hire-32x32.png" sizes="32x32">
+
+</head>
+
+<body class="home page-template-default page page-id-2 no-sidebar">
+<div id="page" class="site">
+<div class="site-inner">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-header-main">
+<div class="site-branding">
+<p class="site-title"><a href="/" rel="home">Audio Image Map Demo</a></p>
+</div><!-- .site-branding -->
+</div><!-- .site-header-main -->
+</header><!-- .site-header -->
+
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">	
+<article>
+
+<div class="post-thumbnail">
+    <!-- THE IMAGE THAT IS PART OF THE TURORIAL see usemap="#my_image" -->
+		<img width="1200" height="519" src="/image/Victorian-Carol-Singers-Hire-UK-London.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Victorian Carol Singers Hire UK London"  usemap="#my_image" loading="lazy" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px">	
+</div><!-- .post-thumbnail -->
+
+
+<!-- THE AUDIO AND AREA MAP THAT ARE PART OF THE TURORIAL -->
+<audio id="sound1">
+    <source src="/audio/joy to the world.mp3" type="audio/mpeg" />
+</audio>
+<audio id="sound2">
+    <source src="/audio/jingle bells.mp3" type="audio/mpeg" />
+</audio>
+<audio id="sound3">
+    <source src="/audio/silent night short.mp3" type="audio/mpeg" />
+</audio>
+<audio id="sound4">
+    <source src="/audio/deck the halls.mp3" type="audio/mpeg" />
+</audio>
+<map name="my_image" id ="my_image" >
+<area shape="rect" coords="408,556,660,996" id="area1" />
+<area shape="rect" coords="880,552,1096,852" id="area2" />
+<area shape="rect" coords="1120,428,1360,732" id="area3" />
+<area shape="rect" coords="1712,544,2444,1160" id="area4" />
+</map>
+
+<div class="entry-content">
+<h2>This is a demo of a website allowing users to play audio by clicking on areas in an image. 
+    Click some of the objects being held in the image above. This has been tested on Safari and Chrome browsers.  
+</h2>
+<p>
+    By clicking the Christmas tree, snowman, star or Santa, you will start one of four audio clips.  Clicking the object area again will stop the audio.  Go to the tutorial  <a href="https://www.hywel.me/jekyll/static/site/2015/11/28/toggle-play-and-pause-on-multiple-audio-files-by-clicking-areas-on-an-image-map.html">Toggle Play and Pause on Multiple Audio Files by Clicking Areas on an Image Map</a>
+</p>
+</div><!-- .entry-content -->
+</article><!-- #post-## -->
+</main><!-- .site-main -->
+</div><!-- .content-area -->
+</div><!-- .site-content -->
+</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<!-- THE SCRIPTS THAT ARE PART OF THE TURORIAL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/audioplay.js"></script>
+<script type="text/javascript" src="/js/imageMapResizer.min.js"></script>
+<script type="text/javascript" >imageMapResize();</script>
+
+</body>
+</html>
